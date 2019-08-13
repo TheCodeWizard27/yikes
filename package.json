@@ -1,0 +1,23 @@
+{
+  "name": "yikes",
+  "version": "1.0.0",
+  "description": "A school project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheCodeWizard27/yikes.git"
+  },
+  "author": "Benny Schärer, Sophia Menger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheCodeWizard27/yikes/issues"
+  },
+  "homepage": "https://github.com/TheCodeWizard27/yikes#readme",
+  "dependencies": {
+    "browserify": "^16.5.0",
+    "express": "^4.17.1"
+  }
+}
