@@ -1,0 +1,18 @@
+.yks-nav-container {
+    width: 100%;
+    /*height: 100%;*/
+    background-color: rgb(100,100,100);
+    overflow: hidden;
+}
+
+.yks-nav-points-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    vertical-align: center;
+}
+.yks-nav-points {
+
+}
