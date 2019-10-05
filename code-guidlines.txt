@@ -1,0 +1,9 @@
+Component Names: 
+    - All lower case with dashes instead of spaces etc.
+    - One Component per file and the file should be named after the component.
+
+Class and Variable Names: 
+    - CamelCase.
+    - Classes are capitalized variables and functions aren't.
+    - Private/invisible members are to use a underline prefix.
+    - 3 Params Max else use a config Object.
