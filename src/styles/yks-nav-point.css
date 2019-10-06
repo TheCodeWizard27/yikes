@@ -1,5 +1,12 @@
 .yks-nav-point-container {
-    background-color: #D9C19A;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
+}
+.yks-nav-point-content {
+    margin: 25% 0;
+    height: 50%;
+    width: 100%;
+    background-color: #D9C19A;
 }

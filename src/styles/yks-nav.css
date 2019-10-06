@@ -1,18 +1,30 @@
 .yks-nav-container {
     width: 100%;
     /*height: 100%;*/
-    background-color: rgb(100,100,100);
+    background-color: #515932;
     overflow: hidden;
 }
 
 .yks-nav-points-container {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     display: flex;
-    justify-content: end;
-    vertical-align: center;
+    justify-content: flex-end;
+    align-items: center;
 }
 .yks-nav-points {
-
+    background-color: transparent;
+}
+.yks-nav-point {
+    margin: 8px 6px;
+    font-size: 16px;
+    display: block;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #F22F1D;
+}
+.yks-nav-point:focus {
+    outline: none;
 }
