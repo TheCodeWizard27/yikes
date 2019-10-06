@@ -8,13 +8,13 @@ function App() {
   return (
     <YksNav>
       <YksNavPoint title="title1">
-        Test 1
+        <div>asdf</div>
       </YksNavPoint>
       <YksNavPoint title="title2">
-        Test 2
+        <div>test2</div>
       </YksNavPoint>
       <YksNavPoint title="title3">
-        Test 3
+        <div>alskdjf</div>
       </YksNavPoint>
     </YksNav>
   );
