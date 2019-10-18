@@ -5,8 +5,6 @@ class YksNavPoint extends React.Component {
     constructor(props) {
         super(props);
 
-        console.log(`${props.title} got called.`)
-
         this._ref = React.createRef();
 
         if(this.props.ref)

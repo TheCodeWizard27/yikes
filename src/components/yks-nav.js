@@ -1,9 +1,10 @@
 import React from 'react';
+import evaluateOrDefault from '../helper/evaluate-or-default';
 import '../styles/yks-nav.css'
 
 class YksNav extends React.Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
 
         this._refMap = new Map();
@@ -19,13 +20,15 @@ class YksNav extends React.Component {
             });
         });
 
-        let points = children.map((child) => (
-            <button className="yks-nav-point"
-                key={child.props.title}
-                onClick={(e) => this.scrollToPoint(child)}>
-                {child.props.title}
-            </button>
-        ));
+        let points = children
+            .filter(child => evaluateOrDefault(child.props.renderNavPoint, true))
+            .map((child) =>
+                <button className="yks-nav-point"
+                    key={child.props.title}
+                    onClick={(e) => this.scrollToPoint(child)}>
+                    {child.props.title}
+                </button>
+            );
 
         return (
             <div className="yks-nav-container">
@@ -42,7 +45,7 @@ class YksNav extends React.Component {
     scrollToPoint(point) {
         // Scroll point into view.
         let ref = this._refMap.get(point.props.title)._ref.current;
-        ref.scrollIntoView({block: "end", behavior: "smooth"});
+        ref.scrollIntoView({ block: "end", behavior: "smooth" });
     }
 }
 
