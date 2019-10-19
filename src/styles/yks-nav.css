@@ -14,12 +14,13 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    right: 0px;
+    right: 1em;
 }
 .yks-nav-points {
     background-color: transparent;
 }
 .yks-nav-point {
+    width: 100%;
     margin: 8px 6px;
     font-size: 24px;
     display: block;
