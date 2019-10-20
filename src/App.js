@@ -1,10 +1,12 @@
 import React from 'react';
 import './styles/main.css';
+import Carousel from './components/carousel/carousel';
 
 function App() {
   return (
-    <div>Hello World</div>
+    <Carousel images={["assets/Chihiro.jpg", "assets/Chihiro.jpg", "assets/Chihiro.jpg"]}/>    
   );
+  
 }
 
 export default App;
