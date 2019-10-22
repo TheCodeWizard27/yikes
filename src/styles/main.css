@@ -40,14 +40,20 @@
 /* #endregion */
 
 .yks-button {
+  opacity: 50%;
   text-transform: capitalize;
   font-size: 16px;
-  background-color: transparent;
-  border: 1px solid darkgray;
+  background-color: rgba(242, 46, 29,0.1);
+  border-radius: 4px;
   cursor: pointer;
+  border: 1px solid currentColor;
+  padding: 4px 8px;
 }
 .yks-button:focus {
   outline: none;
+}
+.yks-button:hover {
+  background-color: rgba(242, 46, 29,0.5);
 }
 
 /* #region Main Components */
