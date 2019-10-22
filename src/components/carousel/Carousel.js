@@ -33,14 +33,15 @@ export default class YikesCarousel extends React.Component {
         } = this.state;
 
         return (
-            <ItemsCarousel
+            <div className={this.props.className}>
+            <ItemsCarousel 
                 // Placeholder configurations
 
 
                 // Carousel configurations
                 infiniteLoop={false}
                 numberOfCards={1}
-                gutter={12}
+                gutter={0}
                 showSlither={false}
                 firstAndLastGutter={false}
                 freeScrolling={false}
@@ -76,6 +77,7 @@ export default class YikesCarousel extends React.Component {
                 )}      
                 
                 </ItemsCarousel>
+                </div>
         );
     }
 }
