@@ -10,7 +10,7 @@
     margin-top: 1em;
 }
 
-.yks-portrait-img-container {
+.yks-portrait-img-container, .yks-portrait-img-shadow {
     width: 12em;
     height: 12em;
     border-radius: 12em;
@@ -18,10 +18,14 @@
     z-index: 1;
     overflow: hidden;
 }
+.yks-portrait-img-shadow {
+    margin-top: -12em;
+    z-index: 2;
+}
 
 .yks-portrait {
     position: relative;
-    z-index: -2;
+    z-index: 0;
     width: 12em;
     height: 12em;
 }

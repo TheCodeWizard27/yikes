@@ -8,6 +8,7 @@ class YksPortrait extends React.Component {
             <div className="yks-portrait-container">
                 <div className="yks-portrait-img-container">
                     <img className="yks-portrait" src={this.props.imageSrc}/>
+                    <div className="yks-portrait-img-shadow"></div>
                 </div>
                 {this.props.children}
             </div>
