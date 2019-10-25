@@ -3,6 +3,10 @@
   color: rgba(216, 201, 153, 1);
 }
 
+body {
+  background-color: #40342A;
+}
+
 body * {
   -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 0.5s; /* Firefox < 16 */
@@ -63,6 +67,7 @@ body * {
 /* #endregion */
 
 .yks-button {
+  text-decoration: none;
   text-transform: capitalize;
   font-size: 16px;
   background-color: rgba(216, 89, 60, 0.6);
@@ -82,6 +87,10 @@ body * {
 }
 .yks-button:hover {
   background-color: rgba(242, 46, 29, 0.5);
+}
+/* For buttons that are around a link. */
+.yks-button a {
+  text-decoration: none;
 }
 
 /* #region Main Components */
