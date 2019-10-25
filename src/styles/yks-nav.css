@@ -1,51 +1,73 @@
 /* Overall container */
 .yks-nav-container {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    background: #D9C99A;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background: rgba(63, 52, 42, 1);
+  background-image: radial-gradient(rgba(13, 12, 12, 1) 30%, transparent 0),
+    radial-gradient(rgba(13, 12, 12, 1) 30%, transparent 0);
+  background-size: 10px 10px;
+  /*background: #D9C99A;
     background-image:
         radial-gradient(rgba(200, 185, 137, 1) 30%, transparent 0),
         radial-gradient(rgba(200, 185, 137, 1) 30%, transparent 0);
-    background-size: 10px 10px;
-    background-position: 0 0, 15px 15px;
+    background-size: 10px 10px;*/
+  background-position: 0 0, 15px 15px;
+  box-shadow: 0 0 10px 5px inset rgba(0, 0, 0, 0.2);
+}
+.yks-nav-container:after {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.5);
 }
 
 /* The navigation bar on the right*/
 .yks-nav-points-container {
-    height: 100%;
-    position: fixed;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    right: 1em;
+  height: calc(100% - 32px);
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  right: 1em;
 }
 .yks-nav-points {
-    background-color: transparent;
+  background-color: transparent;
 }
 .yks-nav-point {
-    width: 100%;
-    margin: 8px 6px;
-    font-size: 24px;
-    display: block;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    border-right: 1px solid transparent;
-    border-bottom: 2px solid currentColor;
+  width: 100%;
+  margin: 8px 0;
+  font-size: 24px;
+  display: block;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid currentColor;
 }
 .yks-nav-point:focus {
-    outline: none;
+  outline: none;
 }
 
 /* Lines between the Navigation Points */
-.yks-nav-point:not(:first-child)::before {
-    content: "";
-    display: block;
-    position: relative;
-    background-color: rgba(0,0,0,0.5);
-    height: 52px;
-    width: 2px;
-    margin: 0 auto;
+.yks-nav-point:not(:first-child):before {
+  content: "";
+  display: block;
+  position: relative;
+  background-color: currentColor;
+  opacity: 0.6;
+  height: 52px;
+  width: 2px;
+  margin: 0 auto;
+}
+
+/* Stop displaying the Menu on the right if there is no space. */
+@media all and (max-width: 600px) {
+  .yks-nav-points-container {
+    display: none;
+  }
+}
+@media all and (min-width: 600px) {
 }

@@ -32,7 +32,7 @@ class YksNav extends React.Component {
 
         return (
             <div className="yks-nav-container">
-                <div className="yks-nav-points-container">
+                <div className="yks-nav-points-container yks-card">
                     <div className="yks-nav-points">
                         {points}
                     </div>

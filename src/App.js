@@ -19,13 +19,17 @@ function App() {
         </div>
       </YksNavPoint>
       <YksNavPoint title="Fotos">
-        <div className="flex fill-page">Fotos Page</div>
+        <div className="fill-page">
+          <div>TextSample</div>
+        </div>
       </YksNavPoint>
       <YksNavPoint title="Bär Grillt">
         <div className="flex fill-page">Bär grillt Page</div>
       </YksNavPoint>
       <YksNavPoint title="Livestream">
-        <div className="flex fill-page">Livestream Page</div>
+        <div className="flex fill-page">
+          <iframe title="livestream" width="1280" height="720" src="https://www.youtube.com/embed/21X5lGlDOfg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        </div>
       </YksNavPoint>
       <YksNavPoint title="Autoren">
         <div className="flex fx-center fill-page">
@@ -34,7 +38,7 @@ function App() {
               <div>Benny Schärer</div>
               <button className="yks-button">Mehr...</button>
             </YksPortrait>
-            <YksPortrait imageSrc="https://avatars2.githubusercontent.com/u/31304747?s=400&v=4">
+            <YksPortrait imageSrc="">
               <div>Sophia Menger</div>
               <button className="yks-button">Mehr...</button>
             </YksPortrait>
