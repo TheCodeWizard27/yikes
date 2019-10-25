@@ -27,14 +27,38 @@
 
 /* The navigation bar on the right*/
 .yks-nav-points-container {
+  border-radius: 0px;
   height: calc(100% - 32px);
   position: fixed;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   right: 1em;
+  z-index: 999;
 }
+
+/* Give navigation a solid color in mobile mode. */
+/* TODO use a better method to change the opacity. */
+@media all and (max-width: 600px) {
+  .yks-nav-points-container {
+    background-color: rgb(0,0,0);
+  }
+}
+
+/* Add navigation opening animation only on desktop */
+@media all and (min-width: 600px) {
+  .yks-nav-points-container.open {
+    animation-name: animateNav;
+    animation-duration: 0.5s;
+    -webkit-animation-name: animateNav; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+  }
+}
+
 .yks-nav-points {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: transparent;
 }
 .yks-nav-point {
@@ -52,7 +76,7 @@
 }
 
 /* Lines between the Navigation Points */
-.yks-nav-point:not(:first-child):before {
+.yks-nav-point:not(:first-child):not(:nth-child(2)):before {
   content: "";
   display: block;
   position: relative;
@@ -63,11 +87,93 @@
   margin: 0 auto;
 }
 
-/* Stop displaying the Menu on the right if there is no space. */
-@media all and (max-width: 600px) {
-  .yks-nav-points-container {
-    display: none;
-  }
+/* #region Toggle Button */
+.yks-nav-toggle-btn {
+  top: 2em;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 4em;
+  height: 4em;
+  border-radius: 4em;
+  cursor: pointer;
+  /* for active*/
+  /*background-image: linear-gradient(
+    130deg,
+    rgba(242, 46, 29, 0.7) 1%,
+    rgba(216, 89, 60, 0.7) 70%,
+    rgba(80, 89, 49, 1)),
+    linear-gradient(
+    100deg,
+    rgba(0, 0, 0, 0) 1%,
+    rgba(0, 0, 0, 0) 70%,
+    rgba(80, 89, 49, 1)
+  );*/
+
+  /* for inactive*/
+  background-color: rgba(216, 89, 60, 0.7);
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
 }
+.yks-nav-toggle-btn svg {
+  margin: auto;
+  fill: #d9c99a;
+}
+/* #endregion */
+
+/* #region Closed State */
+.yks-nav-points-container.closed {
+  background: none;
+  box-shadow: none;
+}
+.yks-nav-point.closed {
+  visibility: hidden;
+}
+.yks-nav-toggle-btn.closed {
+  background-image: linear-gradient(
+      145deg,
+      rgba(242, 46, 29, 0.7) 20%,
+      rgba(216, 89, 60, 0.7) 70%,
+      rgba(80, 89, 49, 1)
+    ),
+    linear-gradient(
+      100deg,
+      rgba(0, 0, 0, 0) 1%,
+      rgba(0, 0, 0, 0) 70%,
+      rgba(80, 89, 49, 1)
+    );
+}
+@media all and (max-width: 600px) {
+  .yks-nav-toggle-btn.closed {
+    position: fixed;
+    right: 2em;
+    bottom: 2em;
+    top: calc(100vh - 6em);
+  } 
+}
+/* #endregion */
+
+/* Opening Nav Animation */
 @media all and (min-width: 600px) {
+  @-webkit-keyframes example {
+    from {
+      opacity: 0%;
+      height: 20%;
+      filter: blur(1px);
+    }
+    to {
+      opacity: 100%;
+      height: calc(100% - 32px);
+    }
+  }
+  @keyframes animateNav {
+    from {
+      opacity: 0%;
+      height: 20%;
+      filter: blur(1px);
+    }
+    to {
+      opacity: 100%;
+      height: calc(100% - 32px);
+    }
+  }
 }

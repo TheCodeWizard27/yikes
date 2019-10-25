@@ -32,7 +32,7 @@ function App() {
         </div>
       </YksNavPoint>
       <YksNavPoint title="Autoren">
-        <div className="flex fx-center fill-page">
+        <div className="flex fx-center fill-min-page">
           <div className="flex fx-wrap full-width fx-space-evenly">
             <YksPortrait imageSrc="https://avatars0.githubusercontent.com/u/36076364?s=400&v=4">
               <div>Benny Schärer</div>
