@@ -7,8 +7,12 @@
     "react": "^16.10.2",
     "react-awesome-slider": "^1.1.1",
     "react-dom": "^16.10.2",
+<<<<<<< HEAD
     "react-items-carousel": "^2.8.0",
     "react-responsive-carousel": "^3.1.50",
+=======
+    "react-router-dom": "^5.1.2",
+>>>>>>> develop
     "react-scripts": "3.2.0"
   },
   "scripts": {

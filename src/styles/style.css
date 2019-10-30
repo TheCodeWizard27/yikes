@@ -1,16 +1,16 @@
 /* Color Theme Swatches in Hex */
-.Abandoned-steets-in-the-city-1-hex { color: #515932; }
-.Abandoned-steets-in-the-city-2-hex { color: #D9C99A; }
-.Abandoned-steets-in-the-city-3-hex { color: #40342A; }
-.Abandoned-steets-in-the-city-4-hex { color: #D9593D; }
-.Abandoned-steets-in-the-city-5-hex { color: #F22F1D; }
+.fg-theme-green { color: #515932; }
+.fg-theme-beige { color: #D9C99A; }
+.fg-theme-brown { color: #40342A; }
+.fg-theme-rust-orange { color: #D9593D; }
+.fg-theme-rust-red { color: #F22F1D; }
 
 /* Color Theme Swatches in RGBA */
-.Abandoned-steets-in-the-city-1-rgba { color: rgba(80, 89, 49, 1); }
-.Abandoned-steets-in-the-city-2-rgba { color: rgba(216, 201, 153, 1); }
-.Abandoned-steets-in-the-city-3-rgba { color: rgba(63, 52, 42, 1); }
-.Abandoned-steets-in-the-city-4-rgba { color: rgba(216, 89, 60, 1); }
-.Abandoned-steets-in-the-city-5-rgba { color: rgba(242, 46, 29, 1); }
+.bg-theme-green { background-color: rgba(80, 89, 49, 1); }
+.bg-theme-beige { background-color: rgba(216, 201, 153, 1); }
+.bg-theme-brown { background-color: rgba(63, 52, 42, 1); }
+.bg-theme-rust-orange { background-color: rgba(216, 89, 60, 1); }
+.bg-theme-rust-red { background-color: rgba(242, 46, 29, 1); }
 
 .stylised {
     font-family: 'Neucha', cursive;
