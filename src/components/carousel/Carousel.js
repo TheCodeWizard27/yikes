@@ -1,6 +1,10 @@
 import React from 'react';
 import ItemsCarousel from 'react-items-carousel';
 import range from 'lodash/range';
+import CarouselButton from './CarouselButton';
+
+import '../../styles/main.css';
+import '../../styles/style.css';
 
 
 export default class YikesCarousel extends React.Component {
@@ -29,14 +33,15 @@ export default class YikesCarousel extends React.Component {
         } = this.state;
 
         return (
-            <ItemsCarousel
+            <div className={this.props.className}>
+            <ItemsCarousel 
                 // Placeholder configurations
 
 
                 // Carousel configurations
                 infiniteLoop={false}
                 numberOfCards={1}
-                gutter={12}
+                gutter={0}
                 showSlither={false}
                 firstAndLastGutter={false}
                 freeScrolling={false}
@@ -47,14 +52,21 @@ export default class YikesCarousel extends React.Component {
                 activeItemIndex={activeItemIndex}
                 activePosition={'center'}
 
-                chevronWidth={60}
-                rightChevron={'>'}
-                leftChevron={'<'}
+                chevronWidth={15}
+                rightChevron={
+                    <CarouselButton buttonVal=">"/>
+                      
+                  }
+                leftChevron={
+                    <CarouselButton buttonVal="<"/>
+                }
                 outsideChevron={false}
+                alwaysShowChevrons={true}
             >
                 {this.props.images.map((image, i) => {
                     return (
                         <img
+                            className={"slider fill-page"}
                             alt={"alt"}
                             key={i}
                             src={image}
@@ -65,6 +77,7 @@ export default class YikesCarousel extends React.Component {
                 )}      
                 
                 </ItemsCarousel>
+                </div>
         );
     }
 }

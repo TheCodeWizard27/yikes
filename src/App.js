@@ -1,10 +1,12 @@
 import React from 'react';
 import './styles/main.css';
 import './styles/style.css';
+import './styles/carousel.css';
 
 import YksNav from './components/yks-nav';
 import YksNavPoint from './components/yks-nav-point';
 import YksPortrait from './components/yks-portrait';
+import YksCarousel from './components/carousel/Carousel';
 
 function App() {
   return (
@@ -19,7 +21,16 @@ function App() {
         </div>
       </YksNavPoint>
       <YksNavPoint title="Fotos">
-        <div className="flex fill-page">Fotos Page</div>
+        <div>Fotos Page
+          <YksCarousel className="carousel" images={
+          [ 
+            "pictures/P1060027.jpg",
+            "pictures/P1060031.jpg",
+            "pictures/P1060036.jpg",
+          ]
+          }></YksCarousel>
+        </div>
+        
       </YksNavPoint>
       <YksNavPoint title="Bär Grillt">
         <div className="flex fill-page">Bär grillt Page</div>
