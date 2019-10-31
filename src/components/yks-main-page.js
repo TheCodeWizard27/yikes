@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/yks-main-page.css';
 
 import YksNav from './yks-nav';
 import YksNavPoint from './yks-nav-point';
@@ -28,8 +29,12 @@ class YksMainPage extends React.Component {
                     <div className="flex fill-page">Bär grillt Page</div>
                 </YksNavPoint>
                 <YksNavPoint title="Livestream">
-                    <div className="flex fill-page">
-                        <iframe title="livestream" width="1280" height="720" src="https://www.youtube.com/embed/21X5lGlDOfg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <div className="flex fill-page yks-card livestream">
+                        <div className="yks-title">Live Stream</div>
+                        <div>Enjoy the 24/7 Stream of nasa doing random interesting stuff. Even thought this is a livestream note that it is not indeed live but just restreaming videos already released.</div>
+                        <div className="livestream-container">
+                            <iframe title="livestream" width="1280" height="720" src="https://www.youtube.com/embed/21X5lGlDOfg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        </div>
                     </div>
                 </YksNavPoint>
                 <YksNavPoint title="Autoren">
