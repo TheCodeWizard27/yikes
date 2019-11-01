@@ -13,6 +13,7 @@ export default class YikesCarousel extends React.Component {
         this.setState({
             children: [],
             activeItemIndex: 0,
+            activeText:  0,
             images: []
         });
 
@@ -25,11 +26,22 @@ export default class YikesCarousel extends React.Component {
 
     createChildren = n => range(n).map(i => <div key={i} style={{ height: 200, background: '#333' }}>{i}</div>);
 
-    changeActiveItem = (activeItemIndex) => this.setState({ activeItemIndex });
+    changeActiveItem = (activeItemIndex) => {
+        let propLength = this.props.images.src.length;
+        for(let i = propLength; i !== 0; i--){
+            if(activeItemIndex % i === 0){
+               this.state.activeText = i ;
+               break;
+            };
+        }
+
+        this.setState({ activeItemIndex });
+    }
 
     render() {
         const {
             activeItemIndex,
+            activeText,
         } = this.state;
 
         return (
@@ -41,29 +53,25 @@ export default class YikesCarousel extends React.Component {
                 // Carousel configurations
                 infiniteLoop={false}
                 numberOfCards={1}
-                gutter={0}
-                showSlither={false}
+
                 firstAndLastGutter={false}
-                freeScrolling={false}
-                infiniteLoop={true}
 
                 // Active item configurations
                 requestToChangeActive={this.changeActiveItem}
                 activeItemIndex={activeItemIndex}
                 activePosition={'center'}
-
-                chevronWidth={15}
                 rightChevron={
-                    <CarouselButton buttonVal=">"/>
+                    <CarouselButton className="carousel-button"buttonVal=">"/>
                       
                   }
                 leftChevron={
-                    <CarouselButton buttonVal="<"/>
+                    <CarouselButton className="carousel-button" buttonVal="<"/>
                 }
                 outsideChevron={false}
                 alwaysShowChevrons={true}
+                infiniteLoop={true}
             >
-                {this.props.images.map((image, i) => {
+                {this.props.images.src.map((image, i) => {
                     return (
                         <img
                             className={"slider fill-page"}
@@ -77,6 +85,8 @@ export default class YikesCarousel extends React.Component {
                 )}      
                 
                 </ItemsCarousel>
+                <div className="carousel-info-button">TESTTESTTEST</div>
+                <div className="carousel-info-box"><p className="carousel-info-text">{this.props.images.text[activeText]}</p></div>
                 </div>
         );
     }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
+
 import './styles/main.css';
 import './styles/style.css';
 import './styles/carousel.css';
@@ -12,7 +13,7 @@ function App() {
     <Router>
       <div>
         <Route exact path="/" component={YksMainPage}/>
-        <Route path="/autor" component={YksAutorPage}/>
+        <Route exact path="/autor/" component={YksAutorPage}/>
       </div>
     </Router>
   );
