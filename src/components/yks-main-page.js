@@ -30,10 +30,12 @@ class YksMainPage extends React.Component {
             this.state.imagesSrc.map((image, i) => {
                 return (
                     <div key={i} className="pic-container">
-                        <div className="pic-text">
-                            <p>{image["text"]}</p>
+                        <div className="pic-wrapper">
+                            <div className="pic-text">
+                                <p>{image["text"]}</p>
+                            </div>
+                            <img className="gallery-pic" src={"/pictures/" + image["file"] + ".jpg"}></img>
                         </div>
-                        <img className="gallery-pic" src={"/pictures/" + image["file"] + ".jpg"}></img>
                     </div>
                 );
             });

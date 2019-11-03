@@ -27,34 +27,42 @@ iframe {
     flex-wrap: wrap;
     margin: auto;
     justify-content: center;
-    width: 80%;
+    padding: 2em;
+    justify-content: space-around;
 }
 
 .pic-container {
-    width:33%;
+    /*width: 340px;*/
+    display: flex;
     position: relative;
-
 }
 
-.pic-container .pic-text {
+.pic-wrapper {
+    margin: auto;
+}
+
+.pic-wrapper .pic-text {
     visibility: collapse;
     position: absolute;
 }
 
-.pic-container:hover .pic-text {
+.pic-wrapper:hover .pic-text {
     visibility: visible; 
     background-color: rgba(216, 89, 60, 0.9);
-    top: 0px;
     text-align: center;
     position: absolute;
-    margin: auto;
+}
+
+.pic-text {
     width:100%;
     height:100%
 }
 
 .gallery-pic {
-    width:95%;
-    padding: 2% 2%;
+    /*width:95%;*/
+    width: 300px;
+    /*padding: 2% 2%;*/
+    padding: 1em;
     margin: auto;
 }
 
