@@ -6,19 +6,19 @@ import YksNav from './yks-nav';
 import YksNavPoint from './yks-nav-point';
 import YksPortrait from './yks-portrait';
 
-const imageSrc = 
-        [
-            { file: "P1060027", blende: "5", verschlusszeit: "1/200", ISO: "100" },
-            { file: "P1060031", blende: "3", verschlusszeit: "1/50", ISO: "100" },
-            { file: "P1060037", blende: "5", verschlusszeit: "1/200", ISO: "100"},
-            { file: "P1060036", blende: "2.8", verschlusszeit: "1/25", ISO: "100"},
-            { file: "P1060039", blende: "2.8", verschlusszeit: "1/225", ISO: "100" },
-            { file: "P1060040", blende: "3.6", verschlusszeit: "1/100", ISO: "100" },
-            { file: "P1060044", blende: "3.6", verschlusszeit: "1/60", ISO: "100"  },
-            { file: "P1060046", blende: "3.2", verschlusszeit: "1/30", ISO: "100"  },
-            { file: "P1060049", blende: "4", verschlusszeit: "1/160", ISO: "100"  },
-            { file: "P1060051", blende: "2.8", verschlusszeit: "1/60", ISO: "100" }
-        ];
+const imageSrc =
+    [
+        { file: "P1060027", blende: "5", verschlusszeit: "1/200", ISO: "100" },
+        { file: "P1060031", blende: "3", verschlusszeit: "1/50", ISO: "100" },
+        { file: "P1060037", blende: "5", verschlusszeit: "1/200", ISO: "100" },
+        { file: "P1060036", blende: "2.8", verschlusszeit: "1/25", ISO: "100" },
+        { file: "P1060039", blende: "2.8", verschlusszeit: "1/225", ISO: "100" },
+        { file: "P1060040", blende: "3.6", verschlusszeit: "1/100", ISO: "100" },
+        { file: "P1060044", blende: "3.6", verschlusszeit: "1/60", ISO: "100" },
+        { file: "P1060046", blende: "3.2", verschlusszeit: "1/30", ISO: "100" },
+        { file: "P1060049", blende: "4", verschlusszeit: "1/160", ISO: "100" },
+        { file: "P1060051", blende: "2.8", verschlusszeit: "1/60", ISO: "100" }
+    ];
 
 class YksMainPage extends React.Component {
     render() {
@@ -60,7 +60,12 @@ class YksMainPage extends React.Component {
                     </div>
                 </YksNavPoint>
                 <YksNavPoint title="Bär Grillt">
-                    <div className="flex fill-page">Bär grillt Page</div>
+                    <div className="flex fill-page yks-card livestream">
+                        <div className="yks-title">Bär grillt</div>
+                        <div className="livestream-container">
+                            <iframe title="bärgrillt-video" width="560" height="315" src="https://www.youtube.com/embed/EurM4mjAqaM" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        </div>
+                    </div>
                 </YksNavPoint>
                 <YksNavPoint title="Livestream">
                     <div className="flex fill-page yks-card livestream">
