@@ -62,6 +62,7 @@ class YksMainPage extends React.Component {
                 <YksNavPoint title="Bär Grillt">
                     <div className="flex fill-page yks-card livestream">
                         <div className="yks-title">Bär grillt</div>
+                        <div>Bär grillt soll eine Parodie sein von den ganzen Videos über Tierdokumentationen und Überlebenskünstlern, gepaart mit Kritik an die GIBB.</div>
                         <div className="livestream-container">
                             <iframe title="bärgrillt-video" width="560" height="315" src="https://www.youtube.com/embed/EurM4mjAqaM" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
@@ -70,7 +71,7 @@ class YksMainPage extends React.Component {
                 <YksNavPoint title="Livestream">
                     <div className="flex fill-page yks-card livestream">
                         <div className="yks-title">Live Stream</div>
-                        <div>Enjoy the 24/7 Stream of nasa doing random interesting stuff. Even thought this is a livestream note that it is not indeed live but just restreaming videos already released.</div>
+                        <div>Dies ist ein Stream über diverse Dinge der NASA. Es ist zwar ein Livestream, jedoch werden in dem Stream nur Vidoes gezeigt, die Leute dann gemeinsam live schauen.</div>
                         <div className="livestream-container">
                             <iframe title="livestream" width="1280" height="720" src="https://www.youtube.com/embed/21X5lGlDOfg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>

@@ -55,6 +55,26 @@ autorData.set('sophia', {
         'Datei_Typen.pdf',
         'Plugins_und_Scripts.pdf',
         'BärGrillt_VideoScript.txt'
+    ],
+    imageData: [
+        {
+            imageSrc: 'pictures/P1060036.jpg',
+            imageData: ['[Blende: 2.8 | Verschlusszeit: 1/25 | ISO: 100]', `Unser Thema war Natur und Kontrast dazu, deswegen fand ich, dass der Grill und Müll
+             der einfach irgendwo draussen abgesetzt wurde perfekt zu unserem Motiv passt. Wie bei den meisten Sachen habe wir geschaut, 
+             dass es nicht ganz zentriert ist und haben anschliessend die Farben und Helligkeit so angepasst, dass es einfach etwas heller wirkt`]
+        },
+        {
+            imageSrc: 'pictures/P1060039.jpg',
+            imageData: ['[Blende: 2.8 | Verschlusszeit: 1/25 | ISO: 100]', `Das Strichmännchen haben wir fotografiert weil ich es lustig fand 
+            und die Farben mochte. Hier haben wir besonders die Farben angepasst, damit das Strichmännchen etwas mehr leuchtet. Das Foto wurde auch so gemacht, dass Links das Moos ist und
+             rechts das Strichmännchen wegen dem Kontrast zur Natur und einer Kritzelei`]
+        },
+        {
+            imageSrc: 'pictures/P1060049.jpg',
+            imageData: ['[Blende: 2.8 | Verschlusszeit: 1/25 | ISO: 100]', `Von dem Schild haben wir ein Foto gemacht, da ich es interessant finde, wie in Städten häufig Kleber 
+            auf oder Grafittis uÄ auf alle möglichen Sachen geklebt werden. Jedoch werden sie auch nicht einfach irgendwo willkürlich aufgeklebt sondern sammeln sich häufig an Dingen 
+            wie eben diesen Schildern. Hier haben wir einfach nur den Kontrast etwas korriegiert und alles etwas heller gemacht.`]
+        }
     ]
 });
 

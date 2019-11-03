@@ -63,9 +63,15 @@ iframe {
 .gallery-pic {
     border-radius: 4px;
     /*width:95%;*/
-    width: 300px;
+    width: 600px;
     padding: 1em;
     margin: auto;
+}
+
+@media all and (max-width: 800px) {
+    .gallery-pic {
+        width: 324px;
+    }
 }
 
 .pic-text-wrapper {
