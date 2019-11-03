@@ -50,31 +50,31 @@ class YksAutorPage extends React.Component {
                         [
                             {
                                 imageSrc: 'pictures/P1060027.jpg',
-                                text: 'sample text1'
+                                imageData: 'sample text1'
                             },
                             {
                                 imageSrc: 'pictures/P1060031.jpg',
-                                text: 'sample text2'
+                                imageData: 'sample text2'
                             },
                             {
                                 imageSrc: 'pictures/P1060036.jpg',
-                                text: 'sample text3'
+                                imageData: 'sample text3'
                             },
                             {
                                 imageSrc: 'pictures/P1060037.jpg',
-                                text: 'sample text4'
+                                imageData: 'sample text4'
                             },
                             {
                                 imageSrc: 'pictures/P1060039.jpg',
-                                text: 'sample text5'
+                                imageData: 'sample text5'
                             },
                             {
                                 imageSrc: 'pictures/P1060040.jpg',
-                                text: 'sample text6'
+                                imageData: 'sample text6'
                             },
                             {
                                 imageSrc: 'pictures/P1060044.jpg',
-                                text: 'sample text7'
+                                imageData: 'sample text7'
                             }
                         ]
                     }/>

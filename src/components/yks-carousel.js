@@ -12,6 +12,8 @@ class YksCarousel extends React.Component {
 
     render() {
         let image;
+        let imageData;
+
         if (this.props.images) {
             /*
             let prevImage;
@@ -25,8 +27,14 @@ class YksCarousel extends React.Component {
                     <img className="fade-in" alt="carousel" src={this.props.images[this.state.index].imageSrc}></img>
                 </div>
             );
+            imageData = (
+                <div>
+                    {this.props.images[this.state.index].imageData}
+                </div>
+            );
         } else {
             image = <div>No images available.</div>
+            imageData = <div>No image text available.</div>
         }
 
         return (
@@ -36,8 +44,11 @@ class YksCarousel extends React.Component {
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z" /><path fill="none" d="M0 0h24v24H0V0z" /></svg>
                     </div>
                 </div>
-                <div>
+                <div className="yks-carousel-img-container">
                     {image}
+                    <div className="yks-card yks-carousel-image-data">
+                        {imageData}
+                    </div>
                 </div>
                 <div className="yks-carousel-btn-right">
                     <div className="yks-icon-button" onClick={() => this.moveDown()}>
