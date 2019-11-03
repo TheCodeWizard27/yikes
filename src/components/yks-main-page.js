@@ -38,7 +38,7 @@ class YksMainPage extends React.Component {
                                     <p>ISO: {image["ISO"]}</p>
                                 </div>
                             </div>
-                            <img className="gallery-pic" src={"/pictures/" + image["file"] + ".jpg"}></img>
+                            <img className="gallery-pic" src={"/pictures/" + image["file"] + ".jpg"} alt={image["file"]}></img>
                         </div>
                     </div>
                 );
