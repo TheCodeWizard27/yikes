@@ -22,7 +22,7 @@ class YksCarousel extends React.Component {
 
             image = (
                 <div>
-                    <img className="fade-in" alt="carousel image" src={this.props.images[this.state.index].imageSrc}></img>
+                    <img className="fade-in" alt="carousel" src={this.props.images[this.state.index].imageSrc}></img>
                 </div>
             );
         } else {
