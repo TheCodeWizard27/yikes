@@ -28,7 +28,6 @@ class YksNav extends React.Component {
             .filter(child => evaluateOrDefault(child.props.renderNavPoint, true))
             .map((child, i) =>
                 <button key={i} className={`yks-nav-point ${navStateClass}`}
-                    key={child.props.title}
                     onClick={(e) => this.scrollToPoint(child)}>
                     {child.props.title}
                 </button>

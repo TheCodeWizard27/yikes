@@ -1,13 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Carousel from './carousel/Carousel.js';
 
 import YksNav from './yks-nav';
 import YksNavPoint from './yks-nav-point';
 import YksPortrait from './yks-portrait';
 
 import '../styles/yks-autor-page.css';
-import YikesCarousel from './carousel/Carousel.js';
 import YksCarousel from './yks-carousel.js';
 
 const autorData = new Map();

@@ -49,7 +49,7 @@ export default class YikesCarousel extends React.Component {
 
 
                 // Carousel configurations
-                infiniteLoop={false}
+                infiniteLoop={true}
                 numberOfCards={1}
 
                 firstAndLastGutter={false}
@@ -67,7 +67,6 @@ export default class YikesCarousel extends React.Component {
                 }
                 outsideChevron={false}
                 alwaysShowChevrons={true}
-                infiniteLoop={true}
             >
                 {this.props.images.src.map((image, i) => {
                     return (

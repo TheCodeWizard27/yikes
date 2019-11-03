@@ -6,28 +6,24 @@ import YksNav from './yks-nav';
 import YksNavPoint from './yks-nav-point';
 import YksPortrait from './yks-portrait';
 
-class YksMainPage extends React.Component {
-    componentWillMount() {
-        this.setState({
-            imagesSrc:
-                [
-                    { file: "P1060027", blende: "5", verschlusszeit: "1/200", ISO: "100" },
-                    { file: "P1060031", blende: "3", verschlusszeit: "1/50", ISO: "100" },
-                    { file: "P1060037", blende: "5", verschlusszeit: "1/200", ISO: "100"},
-                    { file: "P1060036", blende: "2.8", verschlusszeit: "1/25", ISO: "100"},
-                    { file: "P1060039", blende: "2.8", verschlusszeit: "1/225", ISO: "100" },
-                    { file: "P1060040", blende: "3.6", verschlusszeit: "1/100", ISO: "100" },
-                    { file: "P1060044", blende: "3.6", verschlusszeit: "1/60", ISO: "100"  },
-                    { file: "P1060046", blende: "3.2", verschlusszeit: "1/30", ISO: "100"  },
-                    { file: "P1060049", blende: "4", verschlusszeit: "1/160", ISO: "100"  },
-                    { file: "P1060051", blende: "2.8", verschlusszeit: "1/60", ISO: "100" }
-                ]
-        });
-    }
+const imageSrc = 
+        [
+            { file: "P1060027", blende: "5", verschlusszeit: "1/200", ISO: "100" },
+            { file: "P1060031", blende: "3", verschlusszeit: "1/50", ISO: "100" },
+            { file: "P1060037", blende: "5", verschlusszeit: "1/200", ISO: "100"},
+            { file: "P1060036", blende: "2.8", verschlusszeit: "1/25", ISO: "100"},
+            { file: "P1060039", blende: "2.8", verschlusszeit: "1/225", ISO: "100" },
+            { file: "P1060040", blende: "3.6", verschlusszeit: "1/100", ISO: "100" },
+            { file: "P1060044", blende: "3.6", verschlusszeit: "1/60", ISO: "100"  },
+            { file: "P1060046", blende: "3.2", verschlusszeit: "1/30", ISO: "100"  },
+            { file: "P1060049", blende: "4", verschlusszeit: "1/160", ISO: "100"  },
+            { file: "P1060051", blende: "2.8", verschlusszeit: "1/60", ISO: "100" }
+        ];
 
+class YksMainPage extends React.Component {
     render() {
         const gallery =
-            this.state.imagesSrc.map((image, i) => {
+            imageSrc.map((image, i) => {
                 return (
                     <div key={i} className="pic-container">
                         <div className="pic-wrapper">
@@ -71,7 +67,7 @@ class YksMainPage extends React.Component {
                         <div className="yks-title">Live Stream</div>
                         <div>Enjoy the 24/7 Stream of nasa doing random interesting stuff. Even thought this is a livestream note that it is not indeed live but just restreaming videos already released.</div>
                         <div className="livestream-container">
-                            <iframe title="livestream" width="1280" height="720" src="https://www.youtube.com/embed/21X5lGlDOfg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            <iframe title="livestream" width="1280" height="720" SameSite="None" Secure src="https://www.youtube.com/embed/21X5lGlDOfg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                     </div>
                 </YksNavPoint>
