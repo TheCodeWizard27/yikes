@@ -28,19 +28,10 @@ export default class YikesCarousel extends React.Component {
 
     changeActiveItem = (activeItemIndex) => {
         let propLength = this.props.images.src.length;
-        if(activeItemIndex > this.state.activeItemIndex){
-            if(this.state.activeText === propLength -1){
-                this.state.activeText  = 0;
-            }else {
-                this.state.activeText++;
-            }
-            
-        } else if( activeItemIndex < this.state.activeItemIndex){
-            if(this.state.activeText === 0){
-                this.state.activeText = propLength -1;
-            }
-            this.state.activeText--;
-        } 
+        let nextIndex = this.state.activeText + 1;
+
+        if(nextIndex >= propLength) { nextIndex = 0; }
+        if(nextIndex < 0) { nextIndex = propLength-1; }
 
         this.setState({ activeItemIndex });
     }

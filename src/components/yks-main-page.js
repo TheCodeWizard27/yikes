@@ -29,7 +29,7 @@ class YksMainPage extends React.Component {
         const gallery =
             this.state.imagesSrc.map((image, i) => {
                 return (
-                    <div className="pic-container">
+                    <div key={i} className="pic-container">
                         <div className="pic-text">
                             <p>{image["text"]}</p>
                         </div>

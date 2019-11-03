@@ -7,6 +7,8 @@ import YksNavPoint from './yks-nav-point';
 import YksPortrait from './yks-portrait';
 
 import '../styles/yks-autor-page.css';
+import YikesCarousel from './carousel/Carousel.js';
+import YksCarousel from './yks-carousel.js';
 
 const autorData = new Map();
 autorData.set('benny', {
@@ -40,11 +42,43 @@ class YksAutorPage extends React.Component {
         const content = names.map((autor, i) => {
             const tempData = autorData.get(autor);
             return (
-                <YksNavPoint key={i} title={tempData.name}>
+                <YksNavPoint renderNavPoint={false} key={i} title={tempData.name}>
                     <div className='portrait-title'>
                         <YksPortrait imageSrc={tempData.pdLink} />
                         <div className='main-title'>{tempData.name}</div>
                     </div>
+                    <YksCarousel images={
+                        [
+                            {
+                                imageSrc: 'pictures/P1060027.jpg',
+                                text: 'sample text1'
+                            },
+                            {
+                                imageSrc: 'pictures/P1060031.jpg',
+                                text: 'sample text2'
+                            },
+                            {
+                                imageSrc: 'pictures/P1060036.jpg',
+                                text: 'sample text3'
+                            },
+                            {
+                                imageSrc: 'pictures/P1060037.jpg',
+                                text: 'sample text4'
+                            },
+                            {
+                                imageSrc: 'pictures/P1060039.jpg',
+                                text: 'sample text5'
+                            },
+                            {
+                                imageSrc: 'pictures/P1060040.jpg',
+                                text: 'sample text6'
+                            },
+                            {
+                                imageSrc: 'pictures/P1060044.jpg',
+                                text: 'sample text7'
+                            }
+                        ]
+                    }/>
                     <div className="flex fx-center">
                         <div className="yks-card default-padding">
                             {tempData.downloads.map((file, i) => {
@@ -53,6 +87,7 @@ class YksAutorPage extends React.Component {
                                         <button className="yks-button">
                                             <a href={`files/${file}`} download>
                                                 {file}
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2z"/><path fill="none" d="M0 0h24v24H0z"/></svg>
                                             </a>
                                         </button>
                                     </div>
