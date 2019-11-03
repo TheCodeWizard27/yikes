@@ -11,16 +11,16 @@ class YksMainPage extends React.Component {
         this.setState({
             imagesSrc:
                 [
-                    { file: "P1060027", text: "P1060027" },
-                    { file: "P1060031", text: "P1060031" },
-                    { file: "P1060037", text: "P1060037" },
-                    { file: "P1060036", text: "P1060036" },
-                    { file: "P1060039", text: "P1060039" },
-                    { file: "P1060040", text: "P1060040" },
-                    { file: "P1060044", text: "P1060044" },
-                    { file: "P1060046", text: "P1060046" },
-                    { file: "P1060049", text: "P1060049" },
-                    { file: "P1060051", text: "P1060051" }
+                    { file: "P1060027", blende: "5", verschlusszeit: "1/200", ISO: "100" },
+                    { file: "P1060031", blende: "3", verschlusszeit: "1/50", ISO: "100" },
+                    { file: "P1060037", blende: "5", verschlusszeit: "1/200", ISO: "100"},
+                    { file: "P1060036", blende: "2.8", verschlusszeit: "1/25", ISO: "100"},
+                    { file: "P1060039", blende: "2.8", verschlusszeit: "1/225", ISO: "100" },
+                    { file: "P1060040", blende: "3.6", verschlusszeit: "1/100", ISO: "100" },
+                    { file: "P1060044", blende: "3.6", verschlusszeit: "1/60", ISO: "100"  },
+                    { file: "P1060046", blende: "3.2", verschlusszeit: "1/30", ISO: "100"  },
+                    { file: "P1060049", blende: "4", verschlusszeit: "1/160", ISO: "100"  },
+                    { file: "P1060051", blende: "2.8", verschlusszeit: "1/60", ISO: "100" }
                 ]
         });
     }
@@ -32,7 +32,11 @@ class YksMainPage extends React.Component {
                     <div key={i} className="pic-container">
                         <div className="pic-wrapper">
                             <div className="pic-text">
-                                <p>{image["text"]}</p>
+                                <div className="pic-text-wrapper">
+                                    <p>Blende: {image["blende"]}</p>
+                                    <p>Verschlusszeit: {image["verschlusszeit"]}</p>
+                                    <p>ISO: {image["ISO"]}</p>
+                                </div>
                             </div>
                             <img className="gallery-pic" src={"/pictures/" + image["file"] + ".jpg"}></img>
                         </div>
