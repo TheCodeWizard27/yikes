@@ -36,7 +36,6 @@
     border-radius: 30px;
     display: table-cell;
     vertical-align: middle;
-
 }
 
 .carousel-info-button{
@@ -55,7 +54,6 @@
     bottom: 0px;
     height: 10%;
     width: calc(100vh - 4em);
-
 }
 
 .carousel-info-text {

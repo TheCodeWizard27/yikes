@@ -27,33 +27,45 @@ class YksCarousel extends React.Component {
                     <img className="fade-in" alt="carousel" src={this.props.images[this.state.index].imageSrc}></img>
                 </div>
             );
-            imageData = (
-                <div>
-                    {this.props.images[this.state.index].imageData}
-                </div>
-            );
+            if (this.props.images[this.state.index].imageData) {
+                imageData = (
+                    <div>
+                        {this.props.images[this.state.index].imageData.map((data, i) => {
+                            return (<div key={i}>{data}</div>);
+                        })}
+                    </div>
+                )
+            } else {
+                imageData = (
+                    <div>
+                        {this.props.images[this.state.index].imageData}
+                    </div>
+                );
+            }
         } else {
             image = <div>No images available.</div>
             imageData = <div>No image text available.</div>
         }
 
         return (
-            <div className="yks-carousel-container">
-                <div className="yks-carousel-btn-left">
-                    <div className="yks-icon-button" onClick={() => this.moveUp()}>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z" /><path fill="none" d="M0 0h24v24H0V0z" /></svg>
+            <div className="yks-carousel">
+                <div className="yks-carousel-container">
+                    <div className="yks-carousel-btn-left">
+                        <div className="yks-icon-button" onClick={() => this.moveUp()}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z" /><path fill="none" d="M0 0h24v24H0V0z" /></svg>
+                        </div>
+                    </div>
+                    <div className="yks-carousel-img-container">
+                        {image}
+                    </div>
+                    <div className="yks-carousel-btn-right">
+                        <div className="yks-icon-button" onClick={() => this.moveDown()}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" /><path fill="none" d="M0 0h24v24H0V0z" /></svg>
+                        </div>
                     </div>
                 </div>
-                <div className="yks-carousel-img-container">
-                    {image}
-                    <div className="yks-card yks-carousel-image-data">
-                        {imageData}
-                    </div>
-                </div>
-                <div className="yks-carousel-btn-right">
-                    <div className="yks-icon-button" onClick={() => this.moveDown()}>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" /><path fill="none" d="M0 0h24v24H0V0z" /></svg>
-                    </div>
+                <div className="yks-card yks-carousel-image-data">
+                    {imageData}
                 </div>
             </div>
         );

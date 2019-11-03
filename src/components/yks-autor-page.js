@@ -15,7 +15,36 @@ autorData.set('benny', {
     downloads: [
         'Benny_Schärer_Urheberrecht.pdf',
         'Datei_Typen.pdf',
-        'Plugins_und_Scripts.pdf'
+        'Plugins_und_Scripts.pdf',
+        'BärGrillt_VideoScript.txt'
+    ],
+    imageData: [
+        {
+            imageSrc: 'pictures/P1060027.jpg',
+            imageData: [
+                '[ Blende: 5 | Verschlusszeit: 1/200 | ISO: 100 ]', 
+                `Dieses Bild war unser erstes und ist einfach ein Schönes Kunstwerk in der Natur. Was mich dazu bewegte diese Bild zu machen ist aber der Kontrast von dem 
+                Grauen der Statue und dem Grünen sowie dem Gebäude im Hintergrund. Der Winkel des Bildes ist so gewhählt, dass die Kurven wie in den Himmel und den Freien Platz neben
+                den Büschen Zeigt. Dabei habe ich beachtet, dass das Objekt ungefähr 2 drittel des Bildes Belegt.`
+            ]
+        },
+        {
+            imageSrc: 'pictures/P1060037.jpg',
+            imageData: [
+                '[ Blende: 5 | Verschlusszeit: 1/200 | ISO: 100 ]', 
+                `Bei diesem Bild habe ich versucht eine Gute Perspektive von dem Weg hinzubekommen. 
+                Die Farbkombination sowie das Motiv finde ich ist mir bei diesem Bild nicht so gelungen.`
+            ]
+        },
+        {
+            imageSrc: 'pictures/P1060051.jpg',
+            imageData: [
+                '[ Blende: 2.8 | Verschlusszeit: 1/60 | ISO: 100 ]', 
+                `Mit dem zweiten Bild wollte ich den Kontrast zwischen Rost von Metall und dem Grass Einfangen. 
+                Was meiner Meinung nach eine Schöne Farbkombination ergibt verstärkt noch durch die Herbst gebräunten Blätter.
+                Dazu habe ich versucht den Kanal Deckel nicht Zentriert im Bild zu halten jedoch finde ich an der Perspektive Fehlt es in diesem Bild.`
+            ]
+        }
     ]
 });
 autorData.set('sophia', {
@@ -24,7 +53,8 @@ autorData.set('sophia', {
     downloads: [
         'Sophia_Menger_Urheberrecht.pdf',
         'Datei_Typen.pdf',
-        'Plugins_und_Scripts.pdf'
+        'Plugins_und_Scripts.pdf',
+        'BärGrillt_VideoScript.txt'
     ]
 });
 
@@ -46,38 +76,7 @@ class YksAutorPage extends React.Component {
                         <YksPortrait imageSrc={tempData.pdLink} />
                         <div className='main-title'>{tempData.name}</div>
                     </div>
-                    <YksCarousel images={
-                        [
-                            {
-                                imageSrc: 'pictures/P1060027.jpg',
-                                imageData: 'sample text1'
-                            },
-                            {
-                                imageSrc: 'pictures/P1060031.jpg',
-                                imageData: 'sample text2'
-                            },
-                            {
-                                imageSrc: 'pictures/P1060036.jpg',
-                                imageData: 'sample text3'
-                            },
-                            {
-                                imageSrc: 'pictures/P1060037.jpg',
-                                imageData: 'sample text4'
-                            },
-                            {
-                                imageSrc: 'pictures/P1060039.jpg',
-                                imageData: 'sample text5'
-                            },
-                            {
-                                imageSrc: 'pictures/P1060040.jpg',
-                                imageData: 'sample text6'
-                            },
-                            {
-                                imageSrc: 'pictures/P1060044.jpg',
-                                imageData: 'sample text7'
-                            }
-                        ]
-                    }/>
+                    <YksCarousel images={tempData.imageData}/>
                     <div className="flex fx-center">
                         <div className="yks-card default-padding">
                             {tempData.downloads.map((file, i) => {
