@@ -23,10 +23,9 @@
     animation-duration: 1s;
     animation-name: fade-in;
 }
-
 .yks-carousel-container {
     display: flex;
-    width: 40%;
+    width: 50%;
     margin: auto;
     position: relative;
 }
@@ -46,4 +45,10 @@
 }
 .yks-carousel-btn-right {
     right: -2em;
+}
+
+@media all and (max-width: 1100px) {
+    .yks-carousel-container {
+        width: 80%;
+    }
 }
