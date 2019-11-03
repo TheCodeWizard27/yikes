@@ -67,7 +67,7 @@ class YksMainPage extends React.Component {
                         <div className="yks-title">Live Stream</div>
                         <div>Enjoy the 24/7 Stream of nasa doing random interesting stuff. Even thought this is a livestream note that it is not indeed live but just restreaming videos already released.</div>
                         <div className="livestream-container">
-                            <iframe title="livestream" width="1280" height="720" SameSite="None" Secure src="https://www.youtube.com/embed/21X5lGlDOfg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            <iframe title="livestream" width="1280" height="720" src="https://www.youtube.com/embed/21X5lGlDOfg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                     </div>
                 </YksNavPoint>
