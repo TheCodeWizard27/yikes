@@ -68,7 +68,7 @@ body * {
 
 .yks-button {
   text-decoration: none;
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/
   font-size: 16px;
   background-color: rgba(216, 89, 60, 0.6);
   /*background-color: rgba(242, 46, 29, 0.2);*/
@@ -94,7 +94,7 @@ body * {
 }
 
 /* #region Main Components */
-#main-title {
+.main-title {
   font-size: 64px;
   margin-left: -25%;
   border-left: 4px solid transparent;
@@ -125,6 +125,9 @@ footer {
 }
 .full-width {
   width: 100%;
+}
+.default-padding {
+  margin: 2em;
 }
 
 /* #region Cards */
@@ -175,6 +178,9 @@ footer {
 }
 .fx-space-evenly {
   justify-content: space-evenly;
+}
+.fx-space-between {
+  justify-content: space-between;
 }
 /* Edge doesn't support space evenly but still thinks it exists so this is what you see here.   */
 @supports (-ms-flow-from: thingy) {
