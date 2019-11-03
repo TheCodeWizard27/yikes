@@ -32,6 +32,7 @@ autorData.set('sophia', {
 
 class YksAutorPage extends React.Component {
     render() {
+        window.scrollTo(0,0);
         let names;
         if (this.props.location && this.props.location.state) {
             names = this.props.location.state.names
