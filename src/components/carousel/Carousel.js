@@ -28,12 +28,19 @@ export default class YikesCarousel extends React.Component {
 
     changeActiveItem = (activeItemIndex) => {
         let propLength = this.props.images.src.length;
-        for(let i = propLength; i !== 0; i--){
-            if(activeItemIndex % i === 0){
-               this.state.activeText = i ;
-               break;
-            };
-        }
+        if(activeItemIndex > this.state.activeItemIndex){
+            if(this.state.activeText === propLength -1){
+                this.state.activeText  = 0;
+            }else {
+                this.state.activeText++;
+            }
+            
+        } else if( activeItemIndex < this.state.activeItemIndex){
+            if(this.state.activeText === 0){
+                this.state.activeText = propLength -1;
+            }
+            this.state.activeText--;
+        } 
 
         this.setState({ activeItemIndex });
     }
@@ -55,7 +62,7 @@ export default class YikesCarousel extends React.Component {
                 numberOfCards={1}
 
                 firstAndLastGutter={false}
-
+                chevronWidth={15}
                 // Active item configurations
                 requestToChangeActive={this.changeActiveItem}
                 activeItemIndex={activeItemIndex}

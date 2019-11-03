@@ -7,7 +7,7 @@
   background: rgba(63, 52, 42, 1);
   background-image: radial-gradient(rgba(13, 12, 12, 1) 30%, transparent 0),
     radial-gradient(rgba(13, 12, 12, 1) 30%, transparent 0);
-  background-size: 10px 10px;
+  background-size: 5px 5px;
   /*background: #D9C99A;
     background-image:
         radial-gradient(rgba(200, 185, 137, 1) 30%, transparent 0),
@@ -32,6 +32,7 @@
   position: fixed;
   display: flex;
   justify-content: flex-end;
+  flex-direction: row;
   align-items: center;
   right: 1em;
   z-index: 999;

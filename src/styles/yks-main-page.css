@@ -1,0 +1,60 @@
+.livestream {
+    margin: 0 20%;
+    height: auto;
+}
+@media all and (max-width: 600px) {
+    .livestream {
+        /*padding: 0px;*/
+        margin: 0 2em;
+        height: auto;
+    }
+}
+.livestream-container {
+    position:relative;
+    width: 100%;
+    padding-top:56.25%;
+}
+iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.gallery {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    width: 80%;
+}
+
+.pic-container {
+    width:33%;
+    position: relative;
+
+}
+
+.pic-container .pic-text {
+    visibility: collapse;
+    position: absolute;
+}
+
+.pic-container:hover .pic-text {
+    visibility: visible; 
+    background-color: rgba(216, 89, 60, 0.9);
+    top: 0px;
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    width:100%;
+    height:100%
+}
+
+.gallery-pic {
+    width:95%;
+    padding: 2% 2%;
+    margin: auto;
+}
+
