@@ -119,12 +119,46 @@
   margin: auto;
   fill: #d9c99a;
 }
+.yks-nav-btn {
+  display: flex;
+  align-items: center;
+  width: 4em;
+  height: 4em;
+  border-radius: 4em;
+  cursor: pointer;
+  background-image: linear-gradient(
+    130deg,
+    rgba(242, 46, 29, 0.7) 1%,
+    rgba(216, 89, 60, 0.7) 70%,
+    rgba(80, 89, 49, 1)),
+    linear-gradient(
+    100deg,
+    rgba(0, 0, 0, 0) 1%,
+    rgba(0, 0, 0, 0) 70%,
+    rgba(80, 89, 49, 1)
+  );
+}
+.yks-nav-btn a, .yks-nav-btn svg {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  fill: #d9c99a;
+}
+.yks-back-btn {
+  background-color: rgba(216, 89, 60, 0.7);
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 2em;
+  left: 2em;
+  z-index: 99;
+}
 /* #endregion */
 
 /* #region Closed State */
 .yks-nav-points-container.closed {
   background: none;
   box-shadow: none;
+  width: 0;
 }
 .yks-nav-point.closed {
   visibility: hidden;
@@ -144,6 +178,9 @@
     );
 }
 @media all and (max-width: 600px) {
+  .yks-nav-points-container.closed .yks-nav-points {
+    width: 0;
+  }
   .yks-nav-toggle-btn.closed {
     position: fixed;
     right: 2em;

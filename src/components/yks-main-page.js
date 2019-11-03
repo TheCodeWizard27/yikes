@@ -15,7 +15,7 @@ class YksMainPage extends React.Component {
                     <div className="flex-column fx-center fill-page">
                         <div id="title-container">
                             <div className="flex-row fx-center">
-                                <h1 id="main-title">Yikes</h1>
+                                <h1 className="main-title">Yikes</h1>
                             </div>
                         </div>
                     </div>
@@ -29,29 +29,39 @@ class YksMainPage extends React.Component {
                     <div className="flex fill-page">Bär grillt Page</div>
                 </YksNavPoint>
                 <YksNavPoint title="Livestream">
-                    <div className="flex fill-page yks-card livestream">
-                        <div className="yks-title">Live Stream</div>
-                        <div>Enjoy the 24/7 Stream of nasa doing random interesting stuff. Even thought this is a livestream note that it is not indeed live but just restreaming videos already released.</div>
-                        <div className="livestream-container">
-                            <iframe title="livestream" width="1280" height="720" src="https://www.youtube.com/embed/21X5lGlDOfg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <div className="flex fx-center fill-page">
+                        <div className="flex yks-card livestream">
+                            <div className="yks-title">Live Stream</div>
+                            <div>Enjoy the 24/7 Stream of nasa doing random interesting stuff. Even thought this is a livestream note that it is not indeed live but just restreaming videos already released.</div>
+                            <div className="livestream-container">
+                                <iframe title="livestream" width="1280" height="720" src="https://www.youtube.com/embed/21X5lGlDOfg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            </div>
                         </div>
                     </div>
                 </YksNavPoint>
                 <YksNavPoint title="Autoren">
                     <div className="flex fx-center fill-min-page">
                         <div className="flex fx-wrap full-width fx-space-evenly">
-                            <YksPortrait imageSrc="https://avatars0.githubusercontent.com/u/36076364?s=400&v=4">
+                            <div className="yks-portrait-container yks-card">
+                                <YksPortrait imageSrc="https://avatars0.githubusercontent.com/u/36076364?s=400&v=4" />
                                 <div>Benny Schärer</div>
-                                <button className="yks-button"><Link to="/autor">Mehr...</Link></button>
-                            </YksPortrait>
-                            <YksPortrait imageSrc="">
+                                <button className="yks-button"><Link to={{
+                                    pathname: '/autor',
+                                    state: { names: ['benny'] }
+                                }}>Mehr...</Link></button>
+                            </div>
+                            <div className="yks-portrait-container yks-card">
+                                <YksPortrait imageSrc="https://pbs.twimg.com/profile_images/1072461276805255168/q4hOFV7K_400x400.jpg" />
                                 <div>Sophia Menger</div>
-                                <button className="yks-button"><Link to="/autor">Mehr...</Link></button>
-                            </YksPortrait>
+                                <button className="yks-button"><Link to={{
+                                    pathname: '/autor',
+                                    state: { names: ['sophia'] }
+                                }}>Mehr...</Link></button>
+                            </div>
                         </div>
                     </div>
                 </YksNavPoint>
-            </YksNav>
+            </YksNav >
         );
     }
 

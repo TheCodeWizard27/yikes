@@ -12,7 +12,7 @@
 
 .yks-portrait-img-container,
 .yks-portrait-img-shadow {
-  width: 12em;
+  min-width: 12em;
   height: 12em;
   border-radius: 12em;
   box-shadow: 0 0 4px 2px inset rgba(0, 0, 0, 0.1);
