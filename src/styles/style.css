@@ -1,0 +1,17 @@
+/* Color Theme Swatches in Hex */
+.fg-theme-green { color: #515932; }
+.fg-theme-beige { color: #D9C99A; }
+.fg-theme-brown { color: #40342A; }
+.fg-theme-rust-orange { color: #D9593D; }
+.fg-theme-rust-red { color: #F22F1D; }
+
+/* Color Theme Swatches in RGBA */
+.bg-theme-green { background-color: rgba(80, 89, 49, 1); }
+.bg-theme-beige { background-color: rgba(216, 201, 153, 1); }
+.bg-theme-brown { background-color: rgba(63, 52, 42, 1); }
+.bg-theme-rust-orange { background-color: rgba(216, 89, 60, 1); }
+.bg-theme-rust-red { background-color: rgba(242, 46, 29, 1); }
+
+.stylised {
+    font-family: 'Neucha', cursive;
+}

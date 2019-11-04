@@ -1,0 +1,83 @@
+.livestream {
+    margin: 0 20%;
+    height: auto;
+}
+@media all and (max-width: 600px) {
+    .livestream {
+        /*padding: 0px;*/
+        margin: 0 2em;
+        height: auto;
+    }
+}
+.livestream-container {
+    position:relative;
+    width: 100%;
+    padding-top:56.25%;
+}
+iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.gallery {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    padding: 2em;
+    justify-content: space-around;
+}
+
+.pic-container {
+    /*width: 340px;*/
+    display: flex;
+    position: relative;
+}
+
+.pic-wrapper {
+    margin: auto;
+}
+
+.pic-wrapper .pic-text {
+    visibility: collapse;
+    position: absolute;
+}
+
+.pic-wrapper:hover .pic-text {
+    visibility: visible; 
+    background-color: rgba(216, 89, 60, 0.9);
+    text-align: center;
+    position: absolute;
+}
+
+.pic-text {
+    border-radius: 4px;
+    width:100%;
+    height:100%;
+    position: relative;
+}
+
+.gallery-pic {
+    border-radius: 4px;
+    /*width:95%;*/
+    width: 600px;
+    padding: 1em;
+    margin: auto;
+}
+
+@media all and (max-width: 800px) {
+    .gallery-pic {
+        width: 324px;
+    }
+}
+
+.pic-text-wrapper {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.1em;
+}
+

@@ -1,0 +1,99 @@
+> Einleitung
+0. Einleitung
+[Draussen]
+	Bär Grillt:
+		"Ich heisse <Bär Grillt> und ich bin schon an die abgelegensten Orte der Welt gereist.
+
+		- Pause
+
+		Ich bin gerade auf dem Weg in einen der skurrilsten Orte des Berner Landes um Ihnen 
+		diesen zu zeigen, dass Sie, falls Sie jemals dahin befördert werdet, euch da bereits wie zuhause fühlt
+		heute erkunde ich (Gänsefuss)die Gibb(Gänsefuss)."
+	...
+
+1. Über die Klangbrucke
+[Klangbrücke]
+	Bär Grillt:
+		"Diese Überfürung wird auch die Klangbrücke genannt, Legenden besagen das die erzeugten Töne
+		einen beruhigenden effekt haben der sogar genug stark sei um Depressionen zu heilen."
+	...
+
+2. Vor der Schule
+	[Haupteingang IET Gebäude (Aussen)]
+	Bär Grillt:
+		*signalisiere stillstand verbal*
+		"Dort sehen wir eine seltene Spezies, die aber in diesem Gebiet wie Sand am Meer vorkommen.
+		Das sind die sogenannten Informatiker, eine unübliche Menschliche Spezies die von der
+		Sozialen Welt abgeschotten nur in kleinen Rudel existieren. Der gemeine Informatiker lebt zwar
+		nicht an der GIBB, jedoch ist sie für die Informatiker ein heiliger Ort an dem sie sich in der Regel
+		1-2 mal in der Woche treffen."
+		(Insert Screeching Informatiker here)
+	...
+
+3. Haupt Eingang Betreten
+	[Haupteingang IET Gebäude (Innen)]
+	Bär Grillt:
+		"Die Informatiker haben viele unterarten, es gibt solche die sind sehr aktiv und sozial, jedoch ist der grösste
+		Teil von Ihnen zurückgezogen in ihren kleinen Rudeln. Eine Eigentheit der Informatiker ist, dass viele sehr
+		gerne Schabernack treiben."
+		(Aufnahme von Informatiker die am Monitor etwas machen, insert fortnite dances here uwu)
+		"Auch manipulieren sie gerne Technik. An der GIBB geht dies Hand in Hand, kein Monitor oder Klassenzimmer ist sicher."
+	...
+
+4. Hungrige Bois
+[Bei den Mikrowellen]
+	Bär grillt:
+		"Hier sehen wir die wilden Gibb Lehrlinge bei ihrer Nahrungsverspeisung."
+		*Zeigt auf den kleinen Tisch neben dem Aufzug der bestzt ist, ein Stuhl ist besetzt mit einer Tasche*
+		"Platz in der Gibb ist knapp, somit wird es für die Lehrlinge ein Kampf wer
+		zuerst am Feuer seine Nahrung wärmen kann und anschliessend verspeisen kann." 
+		(Zwei Lehrlinge streiten an der Mikrowelle)
+		"Häufig kommt es auch zu Konflikten da andere Lehrlinge viel Platz beansprechen.
+		Viele suchen sich direkt andere Mittagsquartiere da der Überlebenskampf hier sehr
+		anspruchsvoll ist."
+	...
+
+5. Wartender Schüler am Boden sitzend
+[Vor einem Raum]
+	Bär Grillt:
+		"Hier sehen wir einer der grössten Hindernisse des Gibb Gebäudes der sogenannte Bein Dschungel. 
+		Diese Existieren immer vor den Geschlossenen Klassenzimmer heben sich aber im Verlauf des Tages wieder auf."
+		*Läuft drüber und tut so als wäre es anstrengend*
+		(Füge Kammera wackeln usw. ein um es glaubwürdiger zu gestalten.)
+		"Um dieses hinderniss zu überqueren ist höchste Achtsam und Geschicklichkeit verlangt."
+		*Stollpert über ein Bein*
+		(Cut gleich noch im Schrei des herunterfallendem Bär Grills)
+	...
+
+6. Boi der auf die Toilette eilt
+[Vor den Toiletten]
+	Person vor der Toilette:
+		*zittert wegen starkem trauma und flashbacks an schlechte dinge*
+	Bär Grillt:
+		"Hier sehen wir eine, Tag zu Tag grösser werdende Krankheit und Ihre verheerende Folgen.
+		der Name davon 
+		- pause 
+		Latrinophobie, was für die Angst vor den Toiletten der Gibb steht."
+		(Flashbacks von Bilder von den Toiletten Einblenden)
+	Person vor der Toilette:
+		"Nein ich will nicht!! (weitere füller wörter für nein ich will nicht)"
+		*andere person läuft vor dieser auf die Toilette*
+	Bär Grillt:
+		"Lassen wir ihn mal in Ruhe."
+	...
+
+7. Zeigt die Toilet Slums
+[Toiletten]
+	...
+
+8. Ende
+[Auf dem Weg zu der Migro]
+	Bär Grillt:
+		(Wärend er aus dem Schulgebäude geht.)
+		"Sich zu lange in der Gibb aufzuhalten kann gefärlich sogar tödlich sein
+		für den normalen Menschen. 
+		Da die Temperaturen sowie die Ventilation nicht für normale lebensbedinungen ausreichen."
+		*Läuft von dem Schulgebäude zu der Migro*
+		(Roll Credits)
+
+> Ende

@@ -1,0 +1,61 @@
+.carousel {
+    width: calc(100vh - 4em);
+    margin: auto;
+    position: relative;
+}
+
+.carousel-button {  
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    background-color: rgba(216, 89, 60, 0.7);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+}
+.carousel-button:before {
+    backdrop-filter: blur(2px);
+}
+.carousel-button:focus {
+    outline: none;
+}
+.carousel-button:hover {
+    background-color: rgba(242, 46, 29, 0.7);
+}
+/* For buttons that are around a link. */
+.carousel-button a {
+    text-decoration: none;
+}
+
+.carousel-button-content {
+    padding: 36px 40px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 30px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.carousel-info-button{
+    background-color: rgba(216, 89, 60, 0.7);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.carousel-info-box{
+    background-color: rgba(216, 89, 60, 0.9);
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    bottom: 0px;
+    height: 10%;
+    width: calc(100vh - 4em);
+}
+
+.carousel-info-text {
+    overflow-wrap: wrap;
+}
