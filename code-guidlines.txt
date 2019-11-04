@@ -7,3 +7,5 @@ Class and Variable Names:
     - Classes are capitalized variables and functions aren't.
     - Private/invisible members are to use a underline prefix.
     - 3 Params Max else use a config Object.
+
+    
